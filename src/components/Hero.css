@@ -1,0 +1,89 @@
+.hero {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image:url(/public/img/2.jpg);
+  background-position: 1% 9%;
+}
+.hero-content{
+  padding-top: 15rem;
+}
+.hero-content h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.3rem;
+  margin: 0;
+}
+
+html[dir="rtl"] .hero-content h1 {
+  font-family: 'Amiri', serif !important;
+}
+
+.hero-content p {
+  font-size: 2.5rem;
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px; /* المسافة بين الأسهم */
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  opacity: 0;
+  animation: blink 1.5s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.arrow:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding-top: 10rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding-top: 5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,112 @@
+.background {
+  background-color: #f8f8f8;
+  padding: 3rem 0rem ;
+}
+
+.imoge{
+  font-size: 2.875rem;
+  line-height: 3.25rem;
+}
+.section-header {
+  text-align: center;
+  padding: 1rem 0rem ;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  color: #b9975b;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+html[dir="rtl"] .subtitle {
+  font-family: 'Amiri', serif !important;
+}
+
+.title {
+  font-family: "Playfair Display", serif; 
+  font-size: 3rem;
+  color: #222;
+  margin: 0;
+}
+
+html[dir="rtl"] .title {
+  font-family: 'Amiri', serif !important;
+}
+
+.underline {
+  width: 60px;
+  height: 2px;
+  background-color: #c9a38d; 
+  margin: 15px auto 0;
+}
+
+
+.wedding-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+.detail-card {
+  text-align: center;
+}
+
+.detail-card h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+html[dir="rtl"] .detail-card h2 {
+  font-family: 'Amiri', serif !important;
+}
+
+.detail-card p {
+  margin: 0.5rem 0;
+}
+
+html[dir="rtl"] .detail-card p {
+  font-family: 'Amiri', serif !important;
+}
+
+.detail-card a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+}
+
+html[dir="rtl"] .detail-card a {
+  font-family: 'Amiri', serif !important;
+}
+
+@media (max-width: 768px) {
+  .background {
+    padding: 2rem 0;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .wedding-details {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-card {
+    margin-top: 4rem;
+  }
+  .detail-card h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .detail-card h2 {
+    font-size: 2rem;
+  }
+}

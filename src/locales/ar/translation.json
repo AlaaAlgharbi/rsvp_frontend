@@ -1,0 +1,48 @@
+{
+  "header": {
+    "title": "دعوة زفاف"
+  },
+  "hero": {
+    "name1": "مجد",
+    "name2": "ريم"
+  },
+  "weddingDetails": {
+    "subtitle": "التفاصيل",
+    "title": "معلومات الزفاف",
+    "churchCeremony": "مراسم الكنيسة",
+    "churchName": "مار جرجس - المشتاية",
+    "churchTime": "6:00 مساءً",
+    "venue": "صالة",
+    "venueName": "فندق الناصرة",
+    "venueTime": "9:00 مساءً",
+    "viewOnMap": "عرض على الخريطة"
+  },
+  "saveTheDate": {
+    "saveTheDate": "تذكر التاريخ",
+    "date": "4 حزيران 2026",
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثواني",
+    "quote": "روحان و قلب واحد.",
+    "signature": "مجد و ريم · 4 حزيران 2026"
+  },
+  "rsvp": {
+    "rsvp": "تأكيد الحضور",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "joining": "هل ستنضم إلينا؟",
+    "accepts": "أقبل بكل سرور",
+    "declines": "أعتذر بكل أسف",
+    "side": "جانب الدعوة",
+    "majdSide": " من جانب مجد",
+    "reemSide": "من جانب ريم",
+    "send": "إرسال ",
+    "thankYou": "شكرا لتأكيد حضورك!",
+    "regretfulMessage":"يؤسفنا عدم حضوركم"
+  },
+  "footer": {
+    "quote": "روحان و قلب واحد.",
+    "signature": "مجد و ريم · 4 حزيران 2026"
+  }
+}

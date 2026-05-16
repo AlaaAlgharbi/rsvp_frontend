@@ -1,0 +1,170 @@
+.background {
+  background-color: #f8f8f8;
+}
+
+.rsvp {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.rsvp h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+html[dir="rtl"] .rsvp h2 {
+  font-family: "Amiri", serif !important;
+}
+
+.rsvp form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rsvp input[type="text"] {
+  width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.rsvp input[type="text"]:focus {
+  outline: none;
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group {
+  margin: 1rem 0;
+}
+
+.radio-group p {
+  font-weight: bold;
+}
+
+html[dir="rtl"] .radio-group p {
+  font-family: "Amiri", serif !important
+}
+
+.radio-group label {
+  margin: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+html[dir="rtl"] .radio-group label {
+  font-family: "Amiri", serif !important;
+}
+
+html[dir="rtl"] .radio-group .custom-radio {
+  margin: 0rem 0.2rem;
+}
+
+.radio-group input[type="radio"] {
+  display: none; /* Hide original radio button */
+}
+
+.radio-group label .custom-radio {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-group label .custom-radio::before {
+  content: "";
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background-color: #333;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.radio-group input[type="radio"]:checked + .custom-radio::before {
+  transform: scale(1);
+}
+
+.radio-group input[type="radio"]:checked + .custom-radio {
+  border-color: #333;
+}
+
+.radio-group input[type="radio"]:checked + .custom-radio + .radio-label {
+  color: #333;
+}
+
+.rsvp button {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+html[dir="rtl"] .rsvp button {
+  font-family: "Amiri", serif !important;
+}
+
+.rsvp button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rsvp button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-message {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+html[dir="rtl"] .thank-you-message {
+  font-family: "Amiri", serif !important;
+}
+
+@media (max-width: 768px) {
+  .rsvp {
+    padding: 1rem;
+  }
+
+  .rsvp h2 {
+    font-size: 3rem;
+  }
+
+  .rsvp input[type="text"] {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rsvp h2 {
+    font-size: 2.5rem;
+  }
+  .rsvp input[type="text"] {
+    margin-bottom: 0.5rem;
+    height: 2rem;
+  }
+  .radio-group label {
+    margin: 0 0.5rem;
+    font-size: small;
+  }
+}

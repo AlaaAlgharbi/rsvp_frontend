@@ -1,0 +1,112 @@
+.save-the-date {
+  background-color: rgba(51, 51, 51, 0.5);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.save-the-date-content h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+html[dir="rtl"] .save-the-date-content h2 {
+  font-family: 'Amiri', serif !important;
+}
+
+.save-the-date-content h4 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+html[dir="rtl"] .save-the-date-content h4 {
+  font-family: 'Amiri', serif !important;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.countdown-item {
+  margin: 0 1rem;
+}
+
+.countdown-value {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.signature {
+  font-weight: bold;
+}
+
+html[dir="rtl"] .save-the-date-content p {
+  font-family: 'Amiri', serif !important;
+}
+
+@media (max-width: 768px) {
+  .save-the-date {
+    padding: 3rem 1rem;
+  }
+
+  .save-the-date-content h2 {
+    font-size: 3rem;
+  }
+
+  .countdown {
+    font-size: 1.5rem;
+  }
+
+  .countdown-value {
+    font-size: 2.5rem;
+  }
+
+  .countdown-item {
+    margin: 0 0.5rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .save-the-date {
+    padding: 2rem 1rem;
+  }
+
+  .save-the-date-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .countdown {
+    font-size: 1.2rem;
+  }
+
+  .countdown-value {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+}
+

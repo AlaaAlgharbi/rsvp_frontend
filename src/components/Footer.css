@@ -1,0 +1,42 @@
+footer {
+  background-color: #564b4b;
+}
+
+
+.footer {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.footer p:first-child {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.footer p:last-child {
+  font-weight: bold;
+}
+
+html[dir="rtl"] .footer p {
+  font-family: 'Amiri', serif !important;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer p:first-child {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer p:first-child {
+    font-size: 1rem;
+  }
+}
