@@ -29,7 +29,7 @@ const RSVP = () => {
     };
 
     try {
-      const response = await fetch("https://rsvp-backend-abyn.onrender.com/", {
+      const response = await fetch("https://alaaalgharbi.pythonanywhere.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
