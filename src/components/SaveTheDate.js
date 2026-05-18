@@ -8,7 +8,7 @@ const SaveTheDate = () => {
   const { t, i18n } = useTranslation();
 
   const calculateTimeLeft = () => {
-    const difference = +new Date('2026-06-04T00:00:00') - +new Date();
+    const difference = +new Date('2026-06-24T00:00:00') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
