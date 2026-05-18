@@ -47,7 +47,7 @@ html[dir="rtl"] .rsvp h2 {
 }
 
 html[dir="rtl"] .radio-group p {
-  font-family: "Amiri", serif !important
+  font-family: "Amiri", serif !important;
 }
 
 .radio-group label {
@@ -168,3 +168,54 @@ html[dir="rtl"] .thank-you-message {
     font-size: small;
   }
 }
+
+
+
+/* زر الإرسال المعدل (يحافظ على ستايل الزر الأصلي ويضيف موضعًا للّودر) */
+.submit-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* لودر داخل الزر */
+.btn-loader {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255, 255, 255, 0.85);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: btn-spin 0.8s linear infinite;
+}
+
+/* دوران اللودر */
+@keyframes btn-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ستايل الزر المعطّل */
+.submit-btn[disabled],
+.rsvp button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* RTL: تأكد من محاذاة العناصر داخل الزر في الوضع العربي */
+html[dir="rtl"] .submit-btn {
+  direction: rtl;
+}
+
