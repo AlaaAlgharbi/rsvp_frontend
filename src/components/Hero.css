@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -6,12 +7,27 @@
   justify-content: center;
   text-align: center;
   color: white;
-  background-image:url(/public/img/2.jpg);
+  background-image: url(/public/img/2.jpg);
   background-position: 40% 9%;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(51, 51, 51, 0.5); 
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-content{
   padding-top: 15rem;
 }
+
 .hero-content h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.3rem;
@@ -20,10 +36,6 @@
 
 html[dir="rtl"] .hero-content h1 {
   font-family: 'Amiri', serif !important;
-}
-
-.hero-content p {
-  font-size: 2.5rem;
 }
 
 .arrows {
@@ -69,9 +81,6 @@ html[dir="rtl"] .hero-content h1 {
     font-size: 2.8rem;
   }
 
-  .hero-content p {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -83,7 +92,4 @@ html[dir="rtl"] .hero-content h1 {
     font-size: 2.2rem;
   }
 
-  .hero-content p {
-    font-size: 1.5rem;
-  }
 }
