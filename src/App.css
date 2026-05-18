@@ -3,10 +3,6 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/public/img/1.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 18%;
 }
 
 html[dir="rtl"] {
