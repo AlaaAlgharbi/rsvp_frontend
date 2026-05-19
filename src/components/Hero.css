@@ -31,12 +31,13 @@
 .hero-content h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 3.3rem;
-  padding-right: 2rem;
   margin: 0;
 }
 
 html[dir="rtl"] .hero-content h1 {
   font-family: 'Amiri', serif !important;
+  font-size: 3.3rem;
+  margin: 0;
 }
 
 .arrows {

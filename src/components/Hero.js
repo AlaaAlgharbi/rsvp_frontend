@@ -18,7 +18,7 @@ const Hero = () => {
             &{" "}
           </h1>
           <h1 className="hidden fade-in-up fade-in-delay-1">{t('hero.name2')}</h1>
-          <div className="border-top border-1 border-warning w-30 mx-auto"></div>
+          <div className="border-top border-1 border-warning w-40 mx-auto mt-3"></div>
           <br />
           <br />
           <div className="arrows">
